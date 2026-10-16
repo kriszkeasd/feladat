@@ -42,7 +42,7 @@
                 Console.Write(item + ", ");
             }
 
-            Console.WriteLine($"{tomb[3]+1}");
+            Console.WriteLine($"{tomb[2]+1}");
         }
 
 
