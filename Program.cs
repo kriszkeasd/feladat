@@ -31,6 +31,7 @@
 
         static void F13()
         {
+            
             int[] tomb = new int[20]; 
             for (int i = 0; i < tomb.Length; i++)
             {
@@ -41,8 +42,15 @@
             {
                 Console.Write(item + ", ");
             }
+            for (int i = 0; i < tomb.Length; i++)
 
-            Console.WriteLine($"{tomb[2]+1}");
+            {
+
+                Console.WriteLine($"{(i + 1),3} {tomb[i],5} {(tomb[i] < 0 ? "-" : "+"),5}");
+
+            }
+            
+            
         }
 
 
