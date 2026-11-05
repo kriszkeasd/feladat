@@ -6,24 +6,14 @@
         
         static void F01()
         {
-            Random rnd = new Random();
-
             int[] tomb = new int[10];
-
             for (int i = 0; i < tomb.Length; i++)
-
             {
-
-                tomb[i] = rnd.Next(5, 11);
-
+                tomb[i] = r.Next(5, 11);
             }
-
             for (int i = 0; i < tomb.Length; i++)
-
             {
-
                 Console.WriteLine(tomb[i]);
-
             }
         }
 
@@ -70,9 +60,7 @@
             for (int i = 0; i < tomb.Length; i++)
 
             {
-
                 Console.WriteLine($"{(i + 1),3} {tomb[i],5} {(tomb[i] < 0 ? "-" : "+"),5}");
-
             }
             
             
